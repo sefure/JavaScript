@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>İçerik Güncelleme</title>
+    <style>
+
+        
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Best free stock photos in one place.</h1>
+
+    <h3 id="sub-title">Search for free photos..</h3>
+
+    <p>Lorem ipsum dolor <strong> sit amet,</strong> consectetur.</p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <img src="https://i.sozcu.com.tr/wp-content/uploads/2020/04/21/iecrop/ucak-depophotos-1_16_9_1587492244.jpg" width="500">
+   
+    <script>
+        
+        /*var p = document.getElementsByTagName('p')[0];
+
+        p.textContent='Komple Uygulamalı Web Geliştirme';//textContent ile text ifadelerini değiştirebiliyoruz.
+
+        console.log(p);
+        
+        var ul = document.querySelector('ul');
+        ul.textContent='liste';
+        console.log(ul.textContent);
+        */
+        
+        var p = document.getElementsByTagName('p')[0];
+        
+        p.innerHTML='<b>Komple </b> Uygulamalı Web Geliştirme';//innerHTML tırnak içinde tanımlanan HTML ifadesini web de uygular.
+
+        var ul = document.querySelector('ul');
+
+        ul.innerHTML='<li>item 1 </li><li>item 2 </li>';
+
+    </script>
+
+</body>
+</html>

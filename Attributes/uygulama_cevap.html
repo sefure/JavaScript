@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attributes - Uygulama</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="card">
+                    <img class="card-img-top" src="" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var models = [
+            {
+                name: 'Mazda CX-3',
+                image: 'img/mazda.png',
+                link: 'http://yeniarabalar.net/wp-content/uploads/2016/05/model-araba-fotograflari-2942-685x280.png'
+            },
+            {
+                name: 'BMW 418d',
+                image: 'img/bmw.jpg',
+                link: 'https://www.lojistikcilerinsesi.biz/wp-content/uploads/2020/07/1594034937_Yeni_BMW_218i_Gran_Coup__-640x427.jpg'
+            },
+            {
+                name: 'Volvo S60',
+                image: 'img/volvo.jpg',
+                link: 'https://arbstorage.mncdn.com/ilanfotograflari/2020/12/05/16132906/15107f88-d1eb-452b-ab00-3210b4aef615_image_for_silan_16132906_580x435.jpg'
+            }
+        ];
+
+        setInterval(function () {
+
+            var index = Math.floor(Math.random() * models.length);
+
+            console.log(index);
+
+            var img = document.querySelector('.card-img-top');
+            var title = document.querySelector('.card-title');
+            var a = document.querySelector('a');
+
+            img.setAttribute('src', models[index].image);
+            a.setAttribute('href', models[index].link);
+            title.textContent = models[index].name;
+
+        }, 1000);
+    </script>
+</body>
+
+</html>

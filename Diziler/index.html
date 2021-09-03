@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var marka = ["Opel","Toyota","Mazda","Renault"];
+        var model = new Array("Corsa","Yaris","CX-3","Clio");
+
+        console.log(marka[2]);
+        console.log(model[2]);
+
+        model[0]="Astra";
+
+        console.log(model);
+
+        var auris =["Toyota","Auris",42,true];
+
+        auris.push('blue');//renk elemanı eklemek
+        auris.unshift('HB');//dizinin en başına özellik eklemek
+        auris.pop();//dizinin en sonundaki değeri siler 
+        auris.shift();// dizinin en başındaki değer silinir.
+
+        console.log(auris);
+
+        for(var i=0; i<marka.length; i++){
+            console.log(marka[i]);
+        }
+
+        if(marka.indexOf('Mercedes')!==-1){
+            console.log("bulundu");
+        }else{
+            console.log("aranılan kelime bulunamadı.");
+        }
+    </script>
+
+
+</body>
+</html>

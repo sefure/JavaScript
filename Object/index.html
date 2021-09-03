@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var opel={
+            marka : 'Opel',
+            model : 'Corsa',
+            yil : '2015',
+            renk : 'mavi',
+            otomatik : true
+        };
+
+        console.log(opel.marka);
+        console.log(opel.otomatik);
+        console.log(opel['renk']);
+
+        var toyota = new Object();//normal şekilde nesne oluşturma
+
+        toyota.marka='Toyota';
+        toyota.model='Yaris';
+        toyota.yil='2012';
+        toyota.renk='kırmızı';
+        toyota.otomatik=true;
+
+        console.log(toyota.model);
+
+        toyota.model='Auris';//modelini değiştirdim.
+
+        console.log(toyota);
+
+        var arabalar= [ //iki tane obje oluşturdum ve bir diziye attım.
+            {
+                marka : 'Opel',
+                model : 'Corsa',
+                yil : '2015',
+                renk : 'mavi',
+                otomatik : true
+            },
+            {
+                marka : 'Mazda',
+                model : 'CX-3',
+                yil : '2017',
+                renk : 'mavi',
+                otomatik : true
+            }
+
+        ];
+        console.log(arabalar[1].marka);
+
+        for(var i=0; i<arabalar.length; i++){//döngü ile objeleri sıralayabilir.
+            console.log(arabalar[i].marka);
+        }
+
+    </script>
+
+</body>
+</html>
